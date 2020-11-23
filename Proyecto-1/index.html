@@ -3,89 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/style.css">
-  <title>Pagina principal</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
 </head>
 <body>
-  <header id="Header" class="header--flex">
-    <figure class="header__logo">
-      <img src="./assets/imagen.png" alt="Imagen">
-    </figure>
-    <nav class="header__nav--flex">
-      <a href="">
-        <span>Contacto</span>
-        <i class="fas fa-mobile-alt"></i>
-      </a>
-      <a href="">
-        <span>Ubicacion</span>
-        <i class="fas fa-modile-at"></i>
-      </a>
-      <a href="">
-        <span>Sobre nosotros</span>
-        <i class="fas fa-mobile"></i>
-      </a>
-      <a href="">
-        <span>Trabajos</span>
-        <i class="fas fa-mobile"></i>
-      </a>
-    </nav>
-  </header>
-  <header id="Header" class="header--grid">
-    <figure class="header__logo">
-      <img src="./assets/imagen.png" alt="Imagen">
-    </figure>
-    <nav class="header__nav--grid">
-      <a href="" class="item1">
-        <span>Contacto</span>
-        <i class="fas fa-mobile-alt"></i>
-      </a>
-      <a href="">
-        <span>Ubicacion</span>
-        <i class="fas fa-modile-at"></i>
-      </a>
-      <a href="">
-        <span>Sobre nosotros</span>
-        <i class="fas fa-mobile"></i>
-      </a>
-      <a href="">
-        <span>Trabajos</span>
-        <i class="fas fa-mobile"></i>
-      </a>
-    </nav>
-  </header>
-  <main>
-    <!-- <div class="cajas">
-      <div class="box">Hola</div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
-      <div class="box"></div>
+  <header class="Header">
+    <div class="Header__MenuHamburguesa">
+      <button type="button" class="btn-link">
+        <i class="fas fa-bars"></i>
+      </button>
+      <button type="button" class="Header__MenuHamburguesa--cerrar btn-link">
+        <i class="fas fa-times"></i>
+      </button>
+      <nav class="Header__nav--hamburguesa">
+        <a href="">Productos</a>
+        <a href="">Categotias</a>
+        <a href="">Ofertas</a>
+        <a href="">Contacto</a>
+        <a href="">Ubicacion</a>
+        <a href="">Sobre nosotros</a>
+      </nav>
     </div>
-    <h2>Hacemos trabajos a domicilio</h2>
-    <p>Buscamos,arreglamos y te llevamos tu equipo
-      <i class="fas fa-people"></i>
-    </p>
-    <section>
-      <figure>
-        <img src="" alt="PC">
-      </figure>
-      <p>
-        esto
-      </p>
-    </section>
-    <button type="button">CONTACTANOS</button> -->
-  </main>
-  <!-- <footer>
-    <section>
-      <p>Si necesitas alguna ayuda puedes contactarnos a los siguientes correr</p>
-      <span>twitter: </span>
-      <span>facebook: </span>
-      <span>Youtube: </span>
-    </section>
-  </footer> -->
+    <figure class="Header__logo">
+      <img src="./assets/logo.png" alt="">
+    </figure>
+    <div class="Header__MenuUsuario">
+      <button type="button" class="btn-menu-usuario btn-link">
+        <i class="fas fa-user"></i>
+      </button>
+      <nav class="Header__nav--usuario">
+        <a href="">Registrarse</a>
+        <a href="">Iniciar sesion</a>
+      </nav>
+    </div>
+  </header>
 </body>
 </html>
