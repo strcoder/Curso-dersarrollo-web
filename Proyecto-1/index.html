@@ -44,7 +44,24 @@
     <button id="Btn-saludame" class="btn-saludame" type="button" onclick="">Saludame</button>
     <button id="Btn2-despideme" class="btn2-despideme" type="button" onclick="Despideme()">Despideme</button>
     <p id="resultado">Resultado</p>
+
+    <form onsubmit="" class="form-control" id="UserData">
+      <label for="UserName" class="form-label">
+        <p class="form-title">Nombre</p>
+        <input id="UserName" type="text" placeholder="Digita tu nombre" value="" required class="form-input" >
+      </label>
+      <button type="submit" class="form-btn">Registrar</button>
+    </form>
+
+    <div id="UserDataResult" class="user-data">
+      <i class="far fa-smile-wink"></i>
+      <p id="UserNameResult">Resultado</p>
+    </div>
+
   </main>
+  <footer class="footer">
+    <p><strong>No me copies la pagina si no te pego</strong></p>
+  </footer>
   <script src="./js/index.js"></script>
 </body>
 </html>
