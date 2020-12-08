@@ -1,0 +1,11 @@
+{
+  "name": "armando-pagina",
+  "version": "0.0.1",
+  "description": "Pagina para que nos conozcan",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "@strcoder <aguzmanv09@gmail.com>",
+  "license": "MIT"
+}

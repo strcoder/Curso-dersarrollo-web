@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+button {
+  cursor: pointer;
+}
+
+.Header {
+  padding: 25px;
+  display: grid;
+  grid-template-columns: 0.8fr auto auto;
+  column-gap: 10px;
+  box-shadow: 0 .125rem .25rem #0000001a;
+}
+
+.Header__logo {
+  width: 100px;
+  justify-self: center;
+}
+
+.Header__logo--image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.Header__nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.Header__nav--item {
+  padding: 0 10px;
+}
+
+.btn-link {
+  display: flex;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  background: none;
+}
+
+.Header__links {
+  display: flex;
+  align-items: center;
+}
+
+.Header__links i {
+  padding: 0 10px;
+}
+
+.Titulos {
+  padding: 25px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.Titulos h1 {
+  font-size: 2.5em;
+}
+
+.Equipo {
+  padding: 50px 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.miembro {
+  display: grid;
+  justify-items: center;
+  row-gap: 10px;
+}
+
+.miembro > p {
+  max-width: 250px;
+  text-align: center;
+  opacity: 0.6;
+}
+
+.thumbnail {
+  width: 150px;
+  text-align: center;
+}
+
+.thumbnail img {
+  width: 100%;
+}
+
+.redes-sociales {
+  padding-top: 10px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.redes-sociales a {
+  display: flex;
+  color: #041454;
+  background: none;
+  transition: all 0.2s;
+  width: 20px;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-sociales a:hover {
+  color: #ffffff;
+  padding: 5px;
+  border-radius: 100%;
+  background-color:  #041454;
+}
+
+.Conocer {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+}
+
+.footer{
+  text-align: center;
+}
+
+.Grande {
+  display: flex;
+  justify-content: center;
+  padding: 200px 25px;
+  font-size: 4em;
+}
