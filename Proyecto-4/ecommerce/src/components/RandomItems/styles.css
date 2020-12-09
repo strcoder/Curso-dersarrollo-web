@@ -1,0 +1,100 @@
+.RamdomItems {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  justify-content: flex-end;
+  gap: 20px;
+  /* width: 100px; */
+  margin: 100px 20%;
+  max-width: 90vw;
+}
+
+.RamdomItems__item.item--1 {
+  display: grid;
+  background-color: #e4bfb5;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  justify-items: center;
+  text-align: center;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(3, 20px); */
+  padding: 25px;
+  /* width: 300px; */
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.RamdomItems__item--back {
+  width: 200px;
+  /* position: ; */
+  width: 100%;
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
+
+.RamdomItems__item--back img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.RamdomItems__item--front {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  color: #ffffff;
+  font-weight: bold;
+  text-shadow: var(--box-shadow);
+  display: grid;
+  z-index: 10;
+}
+
+.RamdomItems__item--front h4, h6 {
+  background-color: #07070755;
+  padding: 0 10px;
+}
+
+.RamdomItems__item--front h4 {
+  font-size: 1.2em;
+}
+
+.RamdomItems__item--front h6 {
+  font-size: 0.8em;
+}
+
+.RamdomItems__item--front .btn-white {
+  margin-top: 10px;
+  font-size: small;
+}
+
+.RamdomItems__item.item--2 {
+  display: grid;
+  background-color: #e4d1b5;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  justify-items: center;
+  text-align: center;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(3, 20px); */
+  padding: 25px;
+  /* width: 200px; */
+  grid-column-start: 2;
+  grid-row-start: 1;
+}
+
+.RamdomItems__item.item--3 {
+  display: grid;
+  background-color: #b5c2e4;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  justify-items: center;
+  text-align: center;
+  grid-template-columns: 1fr;
+  /* grid-template-rows: repeat(3, 20px); */
+  padding: 25px;
+  /* width: 200px; */
+  /* grid-column-start: 2;
+  grid-row-start: 1; */
+}

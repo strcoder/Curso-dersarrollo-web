@@ -1,0 +1,38 @@
+.FeaturedProducts{
+  display: grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+h3{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px
+}
+
+.arrow{
+    display: flex;
+    padding: 0px 3px;
+    height: 15px;
+    border: solid 0px;
+}
+.carousel__titles{
+    text-align:center;
+}
+
+.carousel__item{
+  padding: 4px;
+  border-radius: 10px;
+}
+
+.carousel__img{
+  width: 350px;
+}
+
+.carousel__img img{
+  width: 100%;
+}
