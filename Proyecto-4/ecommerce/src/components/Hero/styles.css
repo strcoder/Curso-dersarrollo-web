@@ -1,17 +1,36 @@
 .Hero {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* grid-template-columns: repeat(2, 1fr); */
   align-items: center;
   gap: 20px;
-  padding: 10px 50px;
+  padding: 25px;
 }
 
 .Hero__titles {
   display: grid;
   gap: 15px;
+  justify-content: center;
+  text-align: center;
 }
 
 .Hero__images {
   display: grid;
-  justify-items: flex-end;
+  justify-items: center;
+  /* justify-items: flex-end; */
+}
+
+.Hero__images--figure {
+  width: 270px;
+}
+
+.Hero__images--figure img {
+  width: 100%;
+  object-fit: contain;
+}
+
+@media screen and (min-width: 768px) {
+  .Hero {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 20%;
+  }
 }

@@ -1,13 +1,32 @@
 .Header {
   padding: 20px 150px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   justify-content: center;
   box-shadow: 0 .125rem .25rem #0000001a;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  background-color: #1a1818;
+}
+
+.Header__header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Header__header--links {
+  display: none;
+}
+
+.Header__header--nav a {
+  padding: 0 5px;
+  color: var(--main-color);
 }
 
 .Header__logo {
-  width: 150px;
+  width: 100px;
 }
 
 .Header__logo--image {
@@ -16,21 +35,35 @@
 }
 
 .Header__nav {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  /* flex-wrap: wrap; */
+}
+
+.Header__nav a {
+  color: #f1f1f1;
+}
+
+.Header__nav--item {
+  padding: 10px;
+  padding-bottom: 0;
 }
 
 .Header__nav--button {
-  padding: 10px;
+  padding: 5px 10px;
   color: #f1f1f1;
   border-radius: 6px;
   background-color: var(--main-color);
   box-shadow: 0 0.125rem 0.25rem #0000001a;
+  min-width: 110px;
+  text-align: center;
+  /* display: none; */
 }
 
 .Header__nav--button.outline {
-  padding: 10px;
+  padding: 5px 10px;
   color:var(--main-color);
   border-radius: 6px;
   border: solid 1px var(--main-color);
@@ -45,13 +78,24 @@
   background-color: var(--main-color);
 }
 
-@media screen and (max-width: 1200px) {
-  .Header {
-    justify-items: center;
-    grid-template-columns: 1fr;
+@media screen and (min-width: 768px) {
+  .Header__header--nav {
+    display: none;
   }
+  .Header__header--links {
+    display: flex;
+  }
+  .Header__header--links a {
+    margin: 0 10px;
+  }
+}
 
-  .Header__nav {
-    width: 100%;
+@media screen and (min-width: 1024px) {
+  .Header {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .Header__header--links {
+    position: absolute;
+    right: 50px;
   }
 }

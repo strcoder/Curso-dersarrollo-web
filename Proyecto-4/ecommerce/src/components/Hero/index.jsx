@@ -8,10 +8,10 @@ const Hero = () => {
     <div className='Hero'>
       <div className='Hero__titles'>
         <h1>Apasionados por los autos</h1>
-        <h2>Encuentra los mejores accesorios y productos para tu auto</h2>
+        <h6>Encuentra los mejores accesorios y productos para tu auto</h6>
       </div>
       <div className='Hero__images'>
-        <figure>
+        <figure className='Hero__images--figure'>
           <img src={Image} alt="Llanta" />
         </figure>
         <Link to='/header' title='Si no es ahora será mañana' className='btn'>Comienza ahora</Link>
